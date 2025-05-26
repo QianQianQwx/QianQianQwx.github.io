@@ -28,23 +28,6 @@
 							<nav id="nav">
 								<ul>
 									<li class="current"><a href="index.html">Cakes</a></li>
-									<!-- <li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li> -->
 									<li><a href="index.html">Chocolates</a></li>
 									<li><a href="index.html">Macarons</a></li>
 									<li><a href="index.html">Bread</a></li>
@@ -70,20 +53,37 @@
 			<div id="banner-wrapper">
 				<div id="banner" class="box container">
 					<!-- Carousel -->
-					<div class="carousel-container">
-						<div class="carousel-slide active">
+					<div class="carousel-container"
+					     role="region"
+					     aria-roledescription="carousel"
+					     aria-label="Promotional banner carousel"
+					     aria-live="polite"
+					>
+						<div class="carousel-slide active"
+						     role="group"
+						     aria-roledescription="slide"
+						     aria-label="Slide 1 of 3: 25% Sale – Special Occasions"
+						>
 						  <img src="../../images/banner1.png" alt="Cake 1">
 						  <div class="carousel-caption">
 							<h2><span style="color: red;">25% Sale</span><br>Special Occasions</h2>
 						  </div>
 						</div>
-						<div class="carousel-slide">
+						<div class="carousel-slide"
+						     role="group"
+						     aria-roledescription="slide"
+						     aria-label="Slide 2 of 3: Delicious Custom Cakes"
+						>
 						  <img src="../../images/banner2.png" alt="Cake 2">
 						  <div class="carousel-caption">
 							<h2>Delicious Custom Cakes</h2>
 						  </div>
 						</div>
-						<div class="carousel-slide">
+						<div class="carousel-slide"
+						     role="group"
+						     aria-roledescription="slide"
+						     aria-label="Slide 3 of 3: Made With Love"
+						>
 						  <img src="../../images/banner3.png" alt="Cake 3">
 						  <div class="carousel-caption">
 							<h2>Made With Love</h2>
@@ -91,14 +91,39 @@
 						</div>
 					  
 
-						<button class="carousel-btn prev">&#10094;</button>
-						<button class="carousel-btn next">&#10095;</button>
+						<button class="carousel-btn prev"
+						        aria-label="Previous slide"
+						>&#10094;</button>
+						<button class="carousel-btn next"
+						        aria-label="Next slide"
+						>&#10095;</button>
 					  
 
-						<div class="carousel-dots">
-						  <span class="dot active"></span>
-						  <span class="dot"></span>
-						  <span class="dot"></span>
+						<div class="carousel-dots"
+						     role="tablist"
+						     aria-label="Slide navigation"
+						>
+						  <span class="dot active"
+						        role="tab"
+						        tabindex="0"
+						        aria-selected="true"
+						        aria-controls="banner"
+						        aria-label="Go to slide 1"
+						  ></span>
+						  <span class="dot"
+						        role="tab"
+						        tabindex="-1"
+						        aria-selected="false"
+						        aria-controls="banner"
+						        aria-label="Go to slide 2"
+						  ></span>
+						  <span class="dot"
+						        role="tab"
+						        tabindex="-1"
+						        aria-selected="false"
+						        aria-controls="banner"
+						        aria-label="Go to slide 3"
+						  ></span>
 						</div>
 					  </div>
 					  
@@ -128,21 +153,14 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-2.5 col-12-medium">
-								<!-- Box -->
-									<!-- <section class="box feature">
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<div class="inner">
-											<header>
-												<h2>Put something here</h2>
-												<p>Maybe here as well I think</p>
-											</header>
-											<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
-										</div>
-									</section> -->
 									<div class="product-card">
 										<div class="product-image">
 										  <img src="../../images/pic01.jpg" alt="Luxury Brownie Selection Box">
-										  <a href="#" class="image-overlay-button">
+										  <a href="#"
+										     class="image-overlay-button"
+										     role="button"
+										     aria-label="Select options for Elderflower &amp; Rose Garden Cake selection box"
+										  >
 											<i class="fas fa-shopping-cart"></i>
 											<span>Select Options</span>
 										  </a>
@@ -152,7 +170,7 @@
 										  </div>
 										</div>
 										<div class="product-info">
-										  <h3>Elderflower & Rose Garden Cake<br>SELECTION BOX</h3>
+										  <h3>Elderflower &amp; Rose Garden Cake<br>SELECTION BOX</h3>
 										  <div class="price">
 											<span class="old-price">$41.95</span>
 											<span class="new-price">$36.95</span>
@@ -162,16 +180,16 @@
 										  </div>
 										</div>
 									  </div>
-									  
-
 							</div>
 							<div class="col-2.5 col-12-medium">
-
-								<!-- Box -->
 								<div class="product-card">
 									<div class="product-image">
 									  <img src="../../images/pic02.jpg" alt="Luxury Brownie Selection Box">
-									  <a href="#" class="image-overlay-button">
+									  <a href="#"
+									     class="image-overlay-button"
+									     role="button"
+									     aria-label="Select options for Favourites Quartet Sponge Cake Gift Box"
+									  >
 										<i class="fas fa-shopping-cart"></i>
 										<span>Select Options</span>
 									  </a>
@@ -190,15 +208,16 @@
 									  </div>
 									</div>
 								  </div>
-
 							</div>
 							<div class="col-2.5 col-12-medium">
-
-								<!-- Box -->
 								<div class="product-card">
 									<div class="product-image">
 									  <img src="../../images/pic03.jpg" alt="Luxury Brownie Selection Box">
-									  <a href="#" class="image-overlay-button">
+									  <a href="#"
+									     class="image-overlay-button"
+									     role="button"
+									     aria-label="Select options for Summer Quartet Sponge Cake Gift Box"
+									  >
 										<i class="fas fa-shopping-cart"></i>
 										<span>Select Options</span>
 									  </a>
@@ -217,7 +236,6 @@
 									  </div>
 									</div>
 								  </div>
-
 							</div>
 						</div>
 					</div>
@@ -249,9 +267,8 @@
 					 <strong>Limit time: 23/04-23/05</strong></p>
 				  <a href="#" class="event-button">Book Now</a>
 				</div>
-			  </div>
-			  
-			
+			</div>
+			  			
 			<!-- Reviews -->
 			<section class="reviews-section">
 				<h2>Recent Reviews on Google</h2>
@@ -302,92 +319,77 @@
 				</div>
 			</section>
   
-			  
-
 			<!-- Footer -->
-				<div id="footer-wrapper">
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section class="widget links">
-										<h3>Explore KEI</h3>
-										<ul class="style2">
-											<li><a href="#">In-Store Menu</a></li>
-											<li><a href="#">Find KAI</a></li>
-											<li><a href="#">Loyalty App</a></li>
-											<li><a href="#">Allergens</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section class="widget links">
-										<h3>Cakes</h3>
-										<ul class="style2">
-											<li><a href="#">Birthday</a></li>
-											<li><a href="#">Personalised</a></li>
-											<li><a href="#">Celebration</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section class="widget links">
-										<h3>Customer</h3>
-										<ul class="style2">
-											<li><a href="#">Contact Information</a></li>
-											<li><a href="#">My Account</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Contact -->
-									<section class="widget contact last">
-										<h3>Contact us</h3>
-										<ul>
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-										</ul>
-										<p>Fictional Road<br />
-										Australia, TN 00000<br />
-										(800) 555-0000</p>
-									</section>
-
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Explore KEI</h3>
+								<ul class="style2">
+									<li><a href="#">In-Store Menu</a></li>
+									<li><a href="#">Find KAI</a></li>
+									<li><a href="#">Loyalty App</a></li>
+									<li><a href="#">Allergens</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Cakes</h3>
+								<ul class="style2">
+									<li><a href="#">Birthday</a></li>
+									<li><a href="#">Personalised</a></li>
+									<li><a href="#">Celebration</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Customer</h3>
+								<ul class="style2">
+									<li><a href="#">Contact Information</a></li>
+									<li><a href="#">My Account</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget contact last">
+								<h3>Contact us</h3>
+								<ul>
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+								</ul>
+								<p>Fictional Road<br />
+								Australia, TN 00000<br />
+								(800) 555-0000</p>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">WeiXiang Qian</a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-12">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">WeiXiang Qian</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</footer>
-				</div>
-
+					</div>
+				</footer>
 			</div>
 
-		<!-- Scripts -->
+		</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
